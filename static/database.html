@@ -1,0 +1,86 @@
+<button hx-get="/main.html"
+	hx-trigger="click"
+	hx-target="#login-page"
+	hx-swap="innerHTML">
+  Atpakaļ uz sākumlapu
+</button>
+
+<h1>Publiskā Datubāze</h1>
+<input id="search" name="username" type="search" placeholder="Search">
+<table id="inventory" aria-describedby="inv-desc">
+  <caption id="inv-desc" style="display:none">List of items in the chemical / equipment inventory</caption>
+  <thead>
+    <tr>
+      <th class="col-id" scope="col">ID</th>
+      <th class="col-name" scope="col">Nosaukums</th>
+      <th class="col-type" scope="col">Tips</th>
+      <th class="col-storage" scope="col">Apkārtsp</th>
+      <th class="col-qty" scope="col">Skaits</th>
+      <th class="col-answer" scope="col">Svars</th>
+      <th class="col-comments" scope="col">Komentāri</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr tabindex="0">
+      <td class="col-id" data-label="ID">KLID42724</td>
+      <td class="col-name" data-label="Nosaukums">Katalizators</td>
+      <td class="col-type" data-label="Tips">Aprīkojums</td>
+      <td class="col-storage" data-label="Apkārtsp">Trauks</td>
+      <td class="col-qty" data-label="Skaits"><span>23</span></td>
+      <td class="col-answer" data-label="Svars"><span>—</span></td>
+      <td class="col-comments" data-label="Komentāri"><span class="muted">Daži komentāri</span></td>
+    </tr>
+
+    <tr tabindex="0">
+      <td class="col-id" data-label="ID">KLID42723</td>
+      <td class="col-name" data-label="Nosaukums">Birete</td>
+      <td class="col-type" data-label="Tips">Aprīkojums</td>
+      <td class="col-storage" data-label="Apkārtsp">Trauks</td>
+      <td class="col-qty" data-label="Skaits"><span>20</span></td>
+      <td class="col-answer" data-label="Svars"><span>—</span></td>
+      <td class="col-comments" data-label="Komentāri"><span class="muted">Daži komentāri</span></td>
+    </tr>
+
+    <tr tabindex="0">
+      <td class="col-id" data-label="ID">KLID42742</td>
+      <td class="col-name" data-label="Nosaukums">HCl</td>
+      <td class="col-type" data-label="Tips">Viela</td>
+      <td class="col-storage" data-label="Apkārtsp">Skābe</td>
+      <td class="col-qty" data-label="Skaits"><span>19</span></td>
+      <td class="col-answer" data-label="Svars"><span>40</span></td>
+      <td class="col-comments" data-label="Komentāri"><span class="muted">Daži komentāri</span></td>
+    </tr>
+
+    <tr tabindex="0">
+      <td class="col-id" data-label="ID">KLID42724</td>
+      <td class="col-name" data-label="Nosaukums">Kolba</td>
+      <td class="col-type" data-label="Tips">Aprīkojums</td>
+      <td class="col-storage" data-label="Apkārtsp">Trauks</td>
+      <td class="col-qty" data-label="Skaits"><span>20</span></td>
+      <td class="col-answer" data-label="Svars"><span>—</span></td>
+      <td class="col-comments" data-label="Komentāri"><span class="muted">Daži komentāri</span></td>
+    </tr>
+
+    <tr tabindex="0">
+      <td class="col-id" data-label="ID">KLID42534</td>
+      <td class="col-name" data-label="Nosaukums">Fe</td>
+      <td class="col-type" data-label="Tips">Viela</td>
+      <td class="col-storage" data-label="Apkārtsp">Metāls</td>
+      <td class="col-qty" data-label="Skaits"><span>48</span></td>
+      <td class="col-answer" data-label="Svars"><span>10</span></td>
+      <td class="col-comments" data-label="Komentāri"><span class="muted">Daži komentāri</span></td>
+    </tr>
+
+    <tr tabindex="0">
+      <td class="col-id" data-label="ID">KLID42721</td>
+      <td class="col-name" data-label="Nosaukums">Na</td>
+      <td class="col-type" data-label="Tips">Viela</td>
+      <td class="col-storage" data-label="Apkārtsp">Metāls</td>
+      <td class="col-qty" data-label="Skaits"><span>20</span></td>
+      <td class="col-answer" data-label="Svars"><span>20</span></td>
+      <td class="col-comments" data-label="Komentāri"><span class="muted">Daži komentāri</span></td>
+    </tr>
+  </tbody>
+</table>
+

@@ -1,0 +1,26 @@
+<button hx-get="/main.html"
+	hx-trigger="click"
+	hx-target="#login-page"
+	hx-swap="innerHTML">
+  Atpakaļ uz sākumlapu
+</button>
+
+<form class="card" action="/notimplemented.html" method="get" hx-get="/notimplemented.html" hx-target=".card" hx-swap="innerHTML" novalidate>
+  <h1>Pieslēgties</h1>
+  <p>Ievadiet savus pierakstīšanās datus.</p>
+
+  <div class="field">
+    <label for="username">Lietotājvārds</label>
+    <input id="username" name="username" type="text" placeholder="ievadīt lietotājvārdu" autocomplete="username" required>
+  </div>
+
+  <div class="field">
+    <label for="password">Parole</label>
+    <input id="password" name="password" type="password" placeholder="ievadīt paroli" autocomplete="current-password" required>
+  </div>
+  <div class="action">
+    <button class="btn" type="submit">Pieslēgties</button>
+  </div>
+
+  <span class="small">Neesi reģistrēts? <a href="/notimplemented.html">reģistrēties!</a></span>
+</form>
