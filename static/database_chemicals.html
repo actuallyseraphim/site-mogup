@@ -1,0 +1,14 @@
+<div id="login-page">
+  <button hx-get="/login_screen.html"
+	      hx-trigger="click"
+	      hx-target="#login-screen"
+	      hx-swap="innerHTML">
+    Atpakaļ uz sākumlapu
+  </button>
+  <h1>Publiskā Datubāze</h1>
+  <input id="search" name="username" type="search" placeholder="Search">
+  <div hx-get="/chemical_table"
+	   hx-trigger="load"
+	   hx-swap="outerHTML">
+  </div>
+</div>
